@@ -1,0 +1,8 @@
+# ninja log v6
+1	608	1733142031550956340	CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.o	f6c229cec0e5b13e
+1	606	1733142031551105715	CMakeFiles/Little_Log_File_System.dir/Test/DiskTest.cpp.o	77ab0be6e592ef25
+0	527	1733142031550671216	CMakeFiles/Little_Log_File_System.dir/main.cpp.o	4275a9f95aad08b
+2	44	1733142199476651555	build.ninja	c9a562fc60b04779
+5	277	1733142199486569030	Little_Log_File_System	891e121d2ffb9ec
+6	711	1733144296376602754	CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.o	f6c229cec0e5b13e
+712	867	1733144297081877053	Little_Log_File_System	891e121d2ffb9ec
