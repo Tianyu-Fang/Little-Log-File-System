@@ -39,6 +39,8 @@ public:
     // Get the total number of inodes
     size_t getTotalInodes() const;
 
+    void initializeRootInode();
+
 private:
     size_t totalInodes;            // Total number of inodes
     std::vector<bool> inodeBitmap; // Bitmap for inode allocation

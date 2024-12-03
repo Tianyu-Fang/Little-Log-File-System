@@ -1,4 +1,6 @@
 #include "DiskManager.h"
+#include "DirectoryManager.h"
+#include "InodeManager.h"
 #include <iostream>
 #include <cstring> // For memset
 
@@ -63,12 +65,25 @@ void DiskManager::formatDisk() {
     freeBlockVector[0] &= ~0x3; // Reserve blocks 0 (superblock) and 1 (free block vector)
     writeBlock(1, freeBlockVector);
 
+    // Initialize the root directory inode (inode 0)
+    Inode rootInode = {};
+    rootInode.fileType = 2; // Directory type
+    rootInode.fileSize = 0; // Initially empty
+    std::memset(rootInode.directBlocks, 0, sizeof(rootInode.directBlocks));
+
+    // Write the root inode to disk
+    std::vector<char> inodeTableBlock(blockSize, 0);
+    std::memcpy(inodeTableBlock.data(), &rootInode, sizeof(Inode));
+    writeBlock(2, inodeTableBlock); // Assuming inode table starts at block 2
+
     // Debug output to verify
     std::cout << "Superblock written with:\n";
     std::cout << "  Magic number: LLFS\n";
     std::cout << "  Total blocks: " << fixedTotalBlocks << "\n";
     std::cout << "  Number of inodes: " << numberOfInodes << "\n";
+    std::cout << "Root directory initialized with inode 0.\n";
 }
+
 
 
 

@@ -6,6 +6,8 @@
 #include <vector>
 #include <stdexcept>
 
+#include "InodeManager.h"
+
 struct DirectoryEntry {
     uint8_t inodeId;          // Inode ID associated with the file/directory
     char fileName[31];        // File or directory name (max 30 chars + null terminator)
@@ -30,12 +32,15 @@ public:
 
     // Get all entries in a directory
     std::vector<DirectoryEntry> listEntries(const std::string& path) const;
+    void loadRootDirectory(uint8_t rootInodeId, const Inode &rootInode);
+
 
 private:
     std::unordered_map<std::string, std::vector<DirectoryEntry>> directoryTable; // Maps directory paths to entries
 
     // Helper function to validate directory and file names
     void validateName(const std::string& name) const;
+
 };
 
 #endif // DIRECTORYMANAGER_H

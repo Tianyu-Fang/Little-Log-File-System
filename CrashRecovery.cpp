@@ -1,4 +1,6 @@
 #include "CrashRecovery.h"
+#include "DirectoryManager.h"
+#include "InodeManager.h"
 #include <cstring> // For memcmp
 #include <iostream>
 
@@ -9,11 +11,16 @@ CrashRecovery::CrashRecovery(DiskManager& diskManager, FreeBlockManager& freeBlo
 
 // Perform crash recovery
 void CrashRecovery::recover() {
+    std::cout << "Performing crash recovery...\n";
+
     validateSuperblock();
     rebuildFreeBlockVector();
-    validateInodes();
+    inodeManager.initializeRootInode(); // Ensure root inode exists
     validateDirectories();
+
+    std::cout << "Crash recovery completed successfully.\n";
 }
+
 
 // Validate the superblock
 void CrashRecovery::validateSuperblock() {
@@ -81,21 +88,27 @@ void CrashRecovery::validateInodes() {
 
 // Validate directory entries
 void CrashRecovery::validateDirectories() {
-    // Validate the root directory
-    if (directoryManager.listEntries("/").empty()) {
-        throw std::runtime_error("Root directory is missing or uninitialized.");
+    std::cout << "Validating directories...\n";
+
+    // Validate the root directory (inode 0)
+    try {
+        Inode rootInode = inodeManager.getInode(0); // Fetch inode 0
+        directoryManager.loadRootDirectory(0, rootInode); // Load the root directory
+
+        std::cout << "Root directory validated successfully.\n";
+    } catch (const std::exception& e) {
+        throw std::runtime_error("Directory validation failed: " + std::string(e.what()));
     }
 
-    // Check that all directory entries refer to valid inodes
-    auto rootEntries = directoryManager.listEntries("/");
-    for (const auto& entry : rootEntries) {
-        try {
-            inodeManager.getInode(entry.inodeId); // Ensure inode exists
-        } catch (const std::exception&) {
-            throw std::runtime_error("Directory entry refers to invalid inode.");
-        }
+    std::cout << "Root directory entries:\n";
+    for (const auto& entry : directoryManager.listEntries("/")) {
+        std::cout << " - " << entry.fileName << " (inode ID: " << int(entry.inodeId) << ")\n";
     }
 
-    std::cout << "Directory entries validated successfully.\n";
+    // std::cout << "Validating additional directories...\n";
+    //
+    // // Additional directory validation logic can go here
 }
+
+
 

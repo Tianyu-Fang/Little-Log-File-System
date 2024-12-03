@@ -1,6 +1,8 @@
 #include "DirectoryManager.h"
+#include "InodeManager.h"
 #include <cstring> // For strncpy
 #include <iostream>
+
 
 // Constructor
 DirectoryManager::DirectoryManager() {
@@ -94,4 +96,16 @@ void DirectoryManager::validateName(const std::string& name) const {
     if (name.empty() || name.size() > 30) {
         throw std::invalid_argument("Invalid name. Must be 1-30 characters long.");
     }
+}
+
+void DirectoryManager::loadRootDirectory(uint8_t rootInodeId, const Inode& rootInode) {
+    if (rootInode.fileType != 2) { // Check if inode type is directory
+        throw std::runtime_error("Root inode is not a directory.");
+    }
+
+    // Initialize the root directory as an empty directory
+    directoryTable["/"] = {}; // Root directory exists in memory
+    std::cout << "Root directory loaded successfully.\n";
+    std::cout << "Loaded root directory with inode ID: " << int(rootInodeId) << "\n";
+
 }

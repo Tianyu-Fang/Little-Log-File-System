@@ -56,6 +56,7 @@ int main() {
 
 
 
+
     std::cout << "Welcome to the Little Log File System (LLFS)!\n";
     std::cout << "Type 'help' for a list of commands.\n";
 

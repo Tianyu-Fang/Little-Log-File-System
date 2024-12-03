@@ -107,6 +107,45 @@ build Little_Log_File_System: CXX_EXECUTABLE_LINKER__Little_Log_File_System_Debu
   TARGET_FILE = Little_Log_File_System
   TARGET_PDB = Little_Log_File_System.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target DiskTest
+
+
+#############################################
+# Order-only phony target for DiskTest
+
+build cmake_object_order_depends_target_DiskTest: phony || .
+
+build CMakeFiles/DiskTest.dir/Test/DiskTest.cpp.o: CXX_COMPILER__DiskTest_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/Test/DiskTest.cpp || cmake_object_order_depends_target_DiskTest
+  DEFINES = -DTEST_BUILD
+  DEP_FILE = CMakeFiles/DiskTest.dir/Test/DiskTest.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/DiskTest.dir
+  OBJECT_FILE_DIR = CMakeFiles/DiskTest.dir/Test
+
+build CMakeFiles/DiskTest.dir/DiskManager.cpp.o: CXX_COMPILER__DiskTest_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/DiskManager.cpp || cmake_object_order_depends_target_DiskTest
+  DEFINES = -DTEST_BUILD
+  DEP_FILE = CMakeFiles/DiskTest.dir/DiskManager.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/DiskTest.dir
+  OBJECT_FILE_DIR = CMakeFiles/DiskTest.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target DiskTest
+
+
+#############################################
+# Link the executable DiskTest
+
+build DiskTest: CXX_EXECUTABLE_LINKER__DiskTest_Debug CMakeFiles/DiskTest.dir/Test/DiskTest.cpp.o CMakeFiles/DiskTest.dir/DiskManager.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0
+  OBJECT_DIR = CMakeFiles/DiskTest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = DiskTest
+  TARGET_PDB = DiskTest.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -141,7 +180,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/cmake-build-debug
 
-build all: phony Little_Log_File_System
+build all: phony Little_Log_File_System DiskTest
 
 # =============================================================================
 # Built-in targets

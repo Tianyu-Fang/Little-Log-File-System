@@ -21,16 +21,15 @@ add_executable(Little_Log_File_System
         CrashRecovery.h
 )
 
-## Test Target
-#add_executable(DiskTest
-#        Test/DiskTest.cpp
-#        DiskManager.cpp
-#        DiskManager.h
-#        Test/FreeBlockManagerTest.cpp
-#)
-#
-## Define TEST_BUILD for the DiskTest target
-#target_compile_definitions(DiskTest PRIVATE TEST_BUILD)
+# Test Target
+add_executable(DiskTest
+        Test/DiskTest.cpp
+        DiskManager.cpp
+        DiskManager.h
+)
+
+# Define TEST_BUILD for the DiskTest target
+target_compile_definitions(DiskTest PRIVATE TEST_BUILD)
 
 #cmake -S . -B build
 #cmake --build build --target Little_Log_File_System

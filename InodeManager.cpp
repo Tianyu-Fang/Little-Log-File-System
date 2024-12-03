@@ -1,4 +1,5 @@
 #include "InodeManager.h"
+#include <iostream>
 
 // Constructor
 InodeManager::InodeManager(size_t totalInodes)
@@ -87,4 +88,20 @@ void InodeManager::checkInodeId(size_t inodeId) const {
 // Get the total number of inodes
 size_t InodeManager::getTotalInodes() const {
     return totalInodes;
+}
+
+void InodeManager::initializeRootInode() {
+    if (!inodeBitmap[0]) {
+        // Mark inode 0 as allocated
+        inodeBitmap[0] = true;
+
+        // Initialize root inode
+        Inode rootInode = {};
+        rootInode.fileType = 2; // Directory
+        rootInode.fileSize = 0;
+        std::fill(std::begin(rootInode.directBlocks), std::end(rootInode.directBlocks), 0);
+
+        inodeTable[0] = rootInode; // Save the root inode
+        std::cout << "Root inode initialized in InodeManager.\n";
+    }
 }

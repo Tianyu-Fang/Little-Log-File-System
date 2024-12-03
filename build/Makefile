@@ -129,6 +129,19 @@ Little_Log_File_System/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/build
 .PHONY : Little_Log_File_System/fast
 
+#=============================================================================
+# Target rules for targets named DiskTest
+
+# Build rule for target.
+DiskTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DiskTest
+.PHONY : DiskTest
+
+# fast build rule for target.
+DiskTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/build
+.PHONY : DiskTest/fast
+
 CrashRecovery.o: CrashRecovery.cpp.o
 .PHONY : CrashRecovery.o
 
@@ -183,6 +196,7 @@ DiskManager.o: DiskManager.cpp.o
 # target to build an object file
 DiskManager.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/DiskManager.cpp.o
 .PHONY : DiskManager.cpp.o
 
 DiskManager.i: DiskManager.cpp.i
@@ -191,6 +205,7 @@ DiskManager.i: DiskManager.cpp.i
 # target to preprocess a source file
 DiskManager.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/DiskManager.cpp.i
 .PHONY : DiskManager.cpp.i
 
 DiskManager.s: DiskManager.cpp.s
@@ -199,6 +214,7 @@ DiskManager.s: DiskManager.cpp.s
 # target to generate assembly for a file
 DiskManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/DiskManager.cpp.s
 .PHONY : DiskManager.cpp.s
 
 FreeBlockManager.o: FreeBlockManager.cpp.o
@@ -273,6 +289,30 @@ LLFS.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.s
 .PHONY : LLFS.cpp.s
 
+Test/DiskTest.o: Test/DiskTest.cpp.o
+.PHONY : Test/DiskTest.o
+
+# target to build an object file
+Test/DiskTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/Test/DiskTest.cpp.o
+.PHONY : Test/DiskTest.cpp.o
+
+Test/DiskTest.i: Test/DiskTest.cpp.i
+.PHONY : Test/DiskTest.i
+
+# target to preprocess a source file
+Test/DiskTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/Test/DiskTest.cpp.i
+.PHONY : Test/DiskTest.cpp.i
+
+Test/DiskTest.s: Test/DiskTest.cpp.s
+.PHONY : Test/DiskTest.s
+
+# target to generate assembly for a file
+Test/DiskTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/Test/DiskTest.cpp.s
+.PHONY : Test/DiskTest.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -305,6 +345,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... DiskTest"
 	@echo "... Little_Log_File_System"
 	@echo "... CrashRecovery.o"
 	@echo "... CrashRecovery.i"
@@ -324,6 +365,9 @@ help:
 	@echo "... LLFS.o"
 	@echo "... LLFS.i"
 	@echo "... LLFS.s"
+	@echo "... Test/DiskTest.o"
+	@echo "... Test/DiskTest.i"
+	@echo "... Test/DiskTest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
