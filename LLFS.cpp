@@ -118,3 +118,7 @@ void LLFS::createDirectory(const std::string& dirName) {
 void LLFS::deleteDirectory(const std::string& dirName) {
     throw std::runtime_error("Directory deletion is not implemented.");
 }
+
+std::vector<DirectoryEntry> LLFS::listDirectory(const std::string& path) {
+    return directoryManager.listEntries(path);
+}

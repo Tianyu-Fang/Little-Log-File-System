@@ -51,43 +51,50 @@ build cmake_object_order_depends_target_Little_Log_File_System: phony || .
 
 build CMakeFiles/Little_Log_File_System.dir/main.cpp.o: CXX_COMPILER__Little_Log_File_System_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/main.cpp || cmake_object_order_depends_target_Little_Log_File_System
   DEP_FILE = CMakeFiles/Little_Log_File_System.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  FLAGS = -g -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System
   OBJECT_DIR = CMakeFiles/Little_Log_File_System.dir
   OBJECT_FILE_DIR = CMakeFiles/Little_Log_File_System.dir
 
 build CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.o: CXX_COMPILER__Little_Log_File_System_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/DiskManager.cpp || cmake_object_order_depends_target_Little_Log_File_System
   DEP_FILE = CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  FLAGS = -g -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System
   OBJECT_DIR = CMakeFiles/Little_Log_File_System.dir
   OBJECT_FILE_DIR = CMakeFiles/Little_Log_File_System.dir
 
 build CMakeFiles/Little_Log_File_System.dir/FreeBlockManager.cpp.o: CXX_COMPILER__Little_Log_File_System_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/FreeBlockManager.cpp || cmake_object_order_depends_target_Little_Log_File_System
   DEP_FILE = CMakeFiles/Little_Log_File_System.dir/FreeBlockManager.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  FLAGS = -g -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System
   OBJECT_DIR = CMakeFiles/Little_Log_File_System.dir
   OBJECT_FILE_DIR = CMakeFiles/Little_Log_File_System.dir
 
 build CMakeFiles/Little_Log_File_System.dir/InodeManager.cpp.o: CXX_COMPILER__Little_Log_File_System_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/InodeManager.cpp || cmake_object_order_depends_target_Little_Log_File_System
   DEP_FILE = CMakeFiles/Little_Log_File_System.dir/InodeManager.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  FLAGS = -g -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System
   OBJECT_DIR = CMakeFiles/Little_Log_File_System.dir
   OBJECT_FILE_DIR = CMakeFiles/Little_Log_File_System.dir
 
 build CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.o: CXX_COMPILER__Little_Log_File_System_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/DirectoryManager.cpp || cmake_object_order_depends_target_Little_Log_File_System
   DEP_FILE = CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  FLAGS = -g -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System
   OBJECT_DIR = CMakeFiles/Little_Log_File_System.dir
   OBJECT_FILE_DIR = CMakeFiles/Little_Log_File_System.dir
 
 build CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o: CXX_COMPILER__Little_Log_File_System_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/LLFS.cpp || cmake_object_order_depends_target_Little_Log_File_System
   DEP_FILE = CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  FLAGS = -g -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System
   OBJECT_DIR = CMakeFiles/Little_Log_File_System.dir
   OBJECT_FILE_DIR = CMakeFiles/Little_Log_File_System.dir
 
 build CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o: CXX_COMPILER__Little_Log_File_System_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/CrashRecovery.cpp || cmake_object_order_depends_target_Little_Log_File_System
   DEP_FILE = CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  FLAGS = -g -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System
   OBJECT_DIR = CMakeFiles/Little_Log_File_System.dir
   OBJECT_FILE_DIR = CMakeFiles/Little_Log_File_System.dir
 
@@ -100,7 +107,7 @@ build CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o: CXX_COMPILER__L
 # Link the executable Little_Log_File_System
 
 build Little_Log_File_System: CXX_EXECUTABLE_LINKER__Little_Log_File_System_Debug CMakeFiles/Little_Log_File_System.dir/main.cpp.o CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.o CMakeFiles/Little_Log_File_System.dir/FreeBlockManager.cpp.o CMakeFiles/Little_Log_File_System.dir/InodeManager.cpp.o CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.o CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0
+  FLAGS = -g -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0
   OBJECT_DIR = CMakeFiles/Little_Log_File_System.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -108,43 +115,71 @@ build Little_Log_File_System: CXX_EXECUTABLE_LINKER__Little_Log_File_System_Debu
   TARGET_PDB = Little_Log_File_System.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target DiskTest
+# Object build statements for EXECUTABLE target LLFS_Benchmark
 
 
 #############################################
-# Order-only phony target for DiskTest
+# Order-only phony target for LLFS_Benchmark
 
-build cmake_object_order_depends_target_DiskTest: phony || .
+build cmake_object_order_depends_target_LLFS_Benchmark: phony || .
 
-build CMakeFiles/DiskTest.dir/Test/DiskTest.cpp.o: CXX_COMPILER__DiskTest_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/Test/DiskTest.cpp || cmake_object_order_depends_target_DiskTest
-  DEFINES = -DTEST_BUILD
-  DEP_FILE = CMakeFiles/DiskTest.dir/Test/DiskTest.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/DiskTest.dir
-  OBJECT_FILE_DIR = CMakeFiles/DiskTest.dir/Test
+build CMakeFiles/LLFS_Benchmark.dir/Test/LLFS_Benchmark.cpp.o: CXX_COMPILER__LLFS_Benchmark_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/Test/LLFS_Benchmark.cpp || cmake_object_order_depends_target_LLFS_Benchmark
+  DEP_FILE = CMakeFiles/LLFS_Benchmark.dir/Test/LLFS_Benchmark.cpp.o.d
+  FLAGS = -g -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System
+  OBJECT_DIR = CMakeFiles/LLFS_Benchmark.dir
+  OBJECT_FILE_DIR = CMakeFiles/LLFS_Benchmark.dir/Test
 
-build CMakeFiles/DiskTest.dir/DiskManager.cpp.o: CXX_COMPILER__DiskTest_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/DiskManager.cpp || cmake_object_order_depends_target_DiskTest
-  DEFINES = -DTEST_BUILD
-  DEP_FILE = CMakeFiles/DiskTest.dir/DiskManager.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/DiskTest.dir
-  OBJECT_FILE_DIR = CMakeFiles/DiskTest.dir
+build CMakeFiles/LLFS_Benchmark.dir/DiskManager.cpp.o: CXX_COMPILER__LLFS_Benchmark_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/DiskManager.cpp || cmake_object_order_depends_target_LLFS_Benchmark
+  DEP_FILE = CMakeFiles/LLFS_Benchmark.dir/DiskManager.cpp.o.d
+  FLAGS = -g -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System
+  OBJECT_DIR = CMakeFiles/LLFS_Benchmark.dir
+  OBJECT_FILE_DIR = CMakeFiles/LLFS_Benchmark.dir
+
+build CMakeFiles/LLFS_Benchmark.dir/FreeBlockManager.cpp.o: CXX_COMPILER__LLFS_Benchmark_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/FreeBlockManager.cpp || cmake_object_order_depends_target_LLFS_Benchmark
+  DEP_FILE = CMakeFiles/LLFS_Benchmark.dir/FreeBlockManager.cpp.o.d
+  FLAGS = -g -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System
+  OBJECT_DIR = CMakeFiles/LLFS_Benchmark.dir
+  OBJECT_FILE_DIR = CMakeFiles/LLFS_Benchmark.dir
+
+build CMakeFiles/LLFS_Benchmark.dir/InodeManager.cpp.o: CXX_COMPILER__LLFS_Benchmark_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/InodeManager.cpp || cmake_object_order_depends_target_LLFS_Benchmark
+  DEP_FILE = CMakeFiles/LLFS_Benchmark.dir/InodeManager.cpp.o.d
+  FLAGS = -g -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System
+  OBJECT_DIR = CMakeFiles/LLFS_Benchmark.dir
+  OBJECT_FILE_DIR = CMakeFiles/LLFS_Benchmark.dir
+
+build CMakeFiles/LLFS_Benchmark.dir/DirectoryManager.cpp.o: CXX_COMPILER__LLFS_Benchmark_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/DirectoryManager.cpp || cmake_object_order_depends_target_LLFS_Benchmark
+  DEP_FILE = CMakeFiles/LLFS_Benchmark.dir/DirectoryManager.cpp.o.d
+  FLAGS = -g -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System
+  OBJECT_DIR = CMakeFiles/LLFS_Benchmark.dir
+  OBJECT_FILE_DIR = CMakeFiles/LLFS_Benchmark.dir
+
+build CMakeFiles/LLFS_Benchmark.dir/LLFS.cpp.o: CXX_COMPILER__LLFS_Benchmark_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/LLFS.cpp || cmake_object_order_depends_target_LLFS_Benchmark
+  DEP_FILE = CMakeFiles/LLFS_Benchmark.dir/LLFS.cpp.o.d
+  FLAGS = -g -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System
+  OBJECT_DIR = CMakeFiles/LLFS_Benchmark.dir
+  OBJECT_FILE_DIR = CMakeFiles/LLFS_Benchmark.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target DiskTest
+# Link build statements for EXECUTABLE target LLFS_Benchmark
 
 
 #############################################
-# Link the executable DiskTest
+# Link the executable LLFS_Benchmark
 
-build DiskTest: CXX_EXECUTABLE_LINKER__DiskTest_Debug CMakeFiles/DiskTest.dir/Test/DiskTest.cpp.o CMakeFiles/DiskTest.dir/DiskManager.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0
-  OBJECT_DIR = CMakeFiles/DiskTest.dir
+build LLFS_Benchmark: CXX_EXECUTABLE_LINKER__LLFS_Benchmark_Debug CMakeFiles/LLFS_Benchmark.dir/Test/LLFS_Benchmark.cpp.o CMakeFiles/LLFS_Benchmark.dir/DiskManager.cpp.o CMakeFiles/LLFS_Benchmark.dir/FreeBlockManager.cpp.o CMakeFiles/LLFS_Benchmark.dir/InodeManager.cpp.o CMakeFiles/LLFS_Benchmark.dir/DirectoryManager.cpp.o CMakeFiles/LLFS_Benchmark.dir/LLFS.cpp.o
+  FLAGS = -g -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0
+  OBJECT_DIR = CMakeFiles/LLFS_Benchmark.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = DiskTest
-  TARGET_PDB = DiskTest.dbg
+  TARGET_FILE = LLFS_Benchmark
+  TARGET_PDB = LLFS_Benchmark.dbg
 
 
 #############################################
@@ -180,7 +215,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/cmake-build-debug
 
-build all: phony Little_Log_File_System DiskTest
+build all: phony Little_Log_File_System LLFS_Benchmark
 
 # =============================================================================
 # Built-in targets

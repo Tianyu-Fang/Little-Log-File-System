@@ -43,7 +43,13 @@ void DiskManager::openDiskFile() {
 }
 
 void DiskManager::formatDisk() {
-    // Initialize the superblock and free block vector
+    // Constants for reserved blocks
+    const size_t SUPERBLOCK_BLOCK = 0;
+    const size_t FREE_BLOCK_VECTOR_BLOCK = 1;
+    const size_t INODE_TABLE_START_BLOCK = 2;
+    const size_t INODE_TABLE_BLOCKS = 1; // Number of blocks reserved for the inode table
+
+    // Initialize the superblock
     std::vector<char> superblock(blockSize, 0);
 
     // Write the magic number ("LLFS")
@@ -58,12 +64,20 @@ void DiskManager::formatDisk() {
     std::memcpy(superblock.data() + 8, &numberOfInodes, sizeof(numberOfInodes));
 
     // Write the superblock to block 0
-    writeBlock(0, superblock);
+    writeBlock(SUPERBLOCK_BLOCK, superblock);
 
-    // Initialize the free block vector (block 1)
-    std::vector<char> freeBlockVector(blockSize, 0xFF); // Mark all blocks free initially
-    freeBlockVector[0] &= ~0x3; // Reserve blocks 0 (superblock) and 1 (free block vector)
-    writeBlock(1, freeBlockVector);
+    // Initialize the free block vector
+    std::vector<char> freeBlockVector(blockSize, 0xFF); // Mark all blocks as free initially
+
+    // Mark reserved blocks (superblock, free block vector, inode table) as allocated
+    for (size_t i = 0; i < INODE_TABLE_START_BLOCK + INODE_TABLE_BLOCKS; ++i) {
+        size_t byteIndex = i / 8;           // Byte in the free block vector
+        size_t bitIndex = i % 8;            // Bit in the byte
+        freeBlockVector[byteIndex] &= ~(1 << (7 - bitIndex)); // Set the bit to 0 (allocated)
+    }
+
+    // Write the free block vector to block 1
+    writeBlock(FREE_BLOCK_VECTOR_BLOCK, freeBlockVector);
 
     // Initialize the root directory inode (inode 0)
     Inode rootInode = {};
@@ -71,18 +85,20 @@ void DiskManager::formatDisk() {
     rootInode.fileSize = 0; // Initially empty
     std::memset(rootInode.directBlocks, 0, sizeof(rootInode.directBlocks));
 
-    // Write the root inode to disk
+    // Write the root inode to the inode table
     std::vector<char> inodeTableBlock(blockSize, 0);
     std::memcpy(inodeTableBlock.data(), &rootInode, sizeof(Inode));
-    writeBlock(2, inodeTableBlock); // Assuming inode table starts at block 2
+    writeBlock(INODE_TABLE_START_BLOCK, inodeTableBlock);
 
     // Debug output to verify
     std::cout << "Superblock written with:\n";
     std::cout << "  Magic number: LLFS\n";
     std::cout << "  Total blocks: " << fixedTotalBlocks << "\n";
     std::cout << "  Number of inodes: " << numberOfInodes << "\n";
+    std::cout << "Free block vector initialized.\n";
     std::cout << "Root directory initialized with inode 0.\n";
 }
+
 
 
 

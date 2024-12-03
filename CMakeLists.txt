@@ -21,15 +21,42 @@ add_executable(Little_Log_File_System
         CrashRecovery.h
 )
 
-# Test Target
-add_executable(DiskTest
-        Test/DiskTest.cpp
+# LLFS Benchmark Program
+add_executable(LLFS_Benchmark
         DiskManager.cpp
         DiskManager.h
+        FreeBlockManager.cpp
+        FreeBlockManager.h
+        InodeManager.cpp
+        InodeManager.h
+        DirectoryManager.cpp
+        DirectoryManager.h
+        LLFS.cpp
+        LLFS.h
+        CrashRecovery.cpp
+        CrashRecovery.h
+        Test/LLFS_Benchmark.cpp
 )
 
-# Define TEST_BUILD for the DiskTest target
-target_compile_definitions(DiskTest PRIVATE TEST_BUILD)
+# Define BENCHMARK_TEST for the LLFS_Benchmark target
+target_compile_definitions(LLFS_Benchmark PRIVATE BENCHMARK_TEST)
+
+
+## Step 1: Generate the build system
+#cmake -S . -B build
+#cmake --build build --target LLFS_Benchmark
+#./build/LLFS_Benchmark
+
+
+## Test Target
+#add_executable(DiskTest
+#        Test/DiskTest.cpp
+#        DiskManager.cpp
+#        DiskManager.h
+#)
+#
+## Define TEST_BUILD for the DiskTest target
+#target_compile_definitions(DiskTest PRIVATE TEST_BUILD)
 
 #cmake -S . -B build
 #cmake --build build --target Little_Log_File_System
@@ -108,3 +135,5 @@ target_compile_definitions(DiskTest PRIVATE TEST_BUILD)
 #cmake --build build --target Little_Log_File_System
 #cmake --build build --target CrashRecoveryTest
 #./build/CrashRecoveryTest
+
+

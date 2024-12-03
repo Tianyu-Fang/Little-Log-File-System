@@ -34,6 +34,8 @@ public:
     // Delete a directory
     void deleteDirectory(const std::string& dirName);
 
+    std::vector<DirectoryEntry> listDirectory(const std::string &path);
+
 private:
     DiskManager diskManager;
     FreeBlockManager freeBlockManager;

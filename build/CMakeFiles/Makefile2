@@ -64,12 +64,12 @@ CMAKE_BINARY_DIR = /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-S
 
 # The main recursive "all" target.
 all: CMakeFiles/Little_Log_File_System.dir/all
-all: CMakeFiles/DiskTest.dir/all
+all: CMakeFiles/LLFS_Benchmark.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/Little_Log_File_System.dir/codegen
-codegen: CMakeFiles/DiskTest.dir/codegen
+codegen: CMakeFiles/LLFS_Benchmark.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -78,7 +78,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Little_Log_File_System.dir/clean
-clean: CMakeFiles/DiskTest.dir/clean
+clean: CMakeFiles/LLFS_Benchmark.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -88,7 +88,7 @@ clean: CMakeFiles/DiskTest.dir/clean
 CMakeFiles/Little_Log_File_System.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11 "Built target Little_Log_File_System"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16 "Built target Little_Log_File_System"
 .PHONY : CMakeFiles/Little_Log_File_System.dir/all
 
 # Build rule for subdir invocation for target.
@@ -113,35 +113,35 @@ CMakeFiles/Little_Log_File_System.dir/clean:
 .PHONY : CMakeFiles/Little_Log_File_System.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/DiskTest.dir
+# Target rules for target CMakeFiles/LLFS_Benchmark.dir
 
 # All Build rule for target.
-CMakeFiles/DiskTest.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles --progress-num=1,2,3 "Built target DiskTest"
-.PHONY : CMakeFiles/DiskTest.dir/all
+CMakeFiles/LLFS_Benchmark.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LLFS_Benchmark.dir/build.make CMakeFiles/LLFS_Benchmark.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LLFS_Benchmark.dir/build.make CMakeFiles/LLFS_Benchmark.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target LLFS_Benchmark"
+.PHONY : CMakeFiles/LLFS_Benchmark.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/DiskTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DiskTest.dir/all
+CMakeFiles/LLFS_Benchmark.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LLFS_Benchmark.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles 0
-.PHONY : CMakeFiles/DiskTest.dir/rule
+.PHONY : CMakeFiles/LLFS_Benchmark.dir/rule
 
 # Convenience name for target.
-DiskTest: CMakeFiles/DiskTest.dir/rule
-.PHONY : DiskTest
+LLFS_Benchmark: CMakeFiles/LLFS_Benchmark.dir/rule
+.PHONY : LLFS_Benchmark
 
 # codegen rule for target.
-CMakeFiles/DiskTest.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/codegen
-.PHONY : CMakeFiles/DiskTest.dir/codegen
+CMakeFiles/LLFS_Benchmark.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LLFS_Benchmark.dir/build.make CMakeFiles/LLFS_Benchmark.dir/codegen
+.PHONY : CMakeFiles/LLFS_Benchmark.dir/codegen
 
 # clean rule for target.
-CMakeFiles/DiskTest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/clean
-.PHONY : CMakeFiles/DiskTest.dir/clean
+CMakeFiles/LLFS_Benchmark.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LLFS_Benchmark.dir/build.make CMakeFiles/LLFS_Benchmark.dir/clean
+.PHONY : CMakeFiles/LLFS_Benchmark.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
