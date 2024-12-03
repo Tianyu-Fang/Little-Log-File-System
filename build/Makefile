@@ -129,18 +129,29 @@ Little_Log_File_System/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/build
 .PHONY : Little_Log_File_System/fast
 
-#=============================================================================
-# Target rules for targets named DirectoryManagerTest
+CrashRecovery.o: CrashRecovery.cpp.o
+.PHONY : CrashRecovery.o
 
-# Build rule for target.
-DirectoryManagerTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DirectoryManagerTest
-.PHONY : DirectoryManagerTest
+# target to build an object file
+CrashRecovery.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o
+.PHONY : CrashRecovery.cpp.o
 
-# fast build rule for target.
-DirectoryManagerTest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/build
-.PHONY : DirectoryManagerTest/fast
+CrashRecovery.i: CrashRecovery.cpp.i
+.PHONY : CrashRecovery.i
+
+# target to preprocess a source file
+CrashRecovery.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.i
+.PHONY : CrashRecovery.cpp.i
+
+CrashRecovery.s: CrashRecovery.cpp.s
+.PHONY : CrashRecovery.s
+
+# target to generate assembly for a file
+CrashRecovery.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.s
+.PHONY : CrashRecovery.cpp.s
 
 DirectoryManager.o: DirectoryManager.cpp.o
 .PHONY : DirectoryManager.o
@@ -148,7 +159,6 @@ DirectoryManager.o: DirectoryManager.cpp.o
 # target to build an object file
 DirectoryManager.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/DirectoryManager.cpp.o
 .PHONY : DirectoryManager.cpp.o
 
 DirectoryManager.i: DirectoryManager.cpp.i
@@ -157,7 +167,6 @@ DirectoryManager.i: DirectoryManager.cpp.i
 # target to preprocess a source file
 DirectoryManager.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/DirectoryManager.cpp.i
 .PHONY : DirectoryManager.cpp.i
 
 DirectoryManager.s: DirectoryManager.cpp.s
@@ -166,7 +175,6 @@ DirectoryManager.s: DirectoryManager.cpp.s
 # target to generate assembly for a file
 DirectoryManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/DirectoryManager.cpp.s
 .PHONY : DirectoryManager.cpp.s
 
 DiskManager.o: DiskManager.cpp.o
@@ -241,29 +249,29 @@ InodeManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/InodeManager.cpp.s
 .PHONY : InodeManager.cpp.s
 
-Test/DirectoryManagerTest.o: Test/DirectoryManagerTest.cpp.o
-.PHONY : Test/DirectoryManagerTest.o
+LLFS.o: LLFS.cpp.o
+.PHONY : LLFS.o
 
 # target to build an object file
-Test/DirectoryManagerTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/Test/DirectoryManagerTest.cpp.o
-.PHONY : Test/DirectoryManagerTest.cpp.o
+LLFS.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o
+.PHONY : LLFS.cpp.o
 
-Test/DirectoryManagerTest.i: Test/DirectoryManagerTest.cpp.i
-.PHONY : Test/DirectoryManagerTest.i
+LLFS.i: LLFS.cpp.i
+.PHONY : LLFS.i
 
 # target to preprocess a source file
-Test/DirectoryManagerTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/Test/DirectoryManagerTest.cpp.i
-.PHONY : Test/DirectoryManagerTest.cpp.i
+LLFS.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.i
+.PHONY : LLFS.cpp.i
 
-Test/DirectoryManagerTest.s: Test/DirectoryManagerTest.cpp.s
-.PHONY : Test/DirectoryManagerTest.s
+LLFS.s: LLFS.cpp.s
+.PHONY : LLFS.s
 
 # target to generate assembly for a file
-Test/DirectoryManagerTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/Test/DirectoryManagerTest.cpp.s
-.PHONY : Test/DirectoryManagerTest.cpp.s
+LLFS.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.s
+.PHONY : LLFS.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -297,8 +305,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... DirectoryManagerTest"
 	@echo "... Little_Log_File_System"
+	@echo "... CrashRecovery.o"
+	@echo "... CrashRecovery.i"
+	@echo "... CrashRecovery.s"
 	@echo "... DirectoryManager.o"
 	@echo "... DirectoryManager.i"
 	@echo "... DirectoryManager.s"
@@ -311,9 +321,9 @@ help:
 	@echo "... InodeManager.o"
 	@echo "... InodeManager.i"
 	@echo "... InodeManager.s"
-	@echo "... Test/DirectoryManagerTest.o"
-	@echo "... Test/DirectoryManagerTest.i"
-	@echo "... Test/DirectoryManagerTest.s"
+	@echo "... LLFS.o"
+	@echo "... LLFS.i"
+	@echo "... LLFS.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -47,22 +47,29 @@ void DiskManager::formatDisk() {
     // Write the magic number ("LLFS")
     std::memcpy(superblock.data(), "LLFS", 4);
 
-    // Write the total number of blocks
-    std::memcpy(superblock.data() + 4, &totalBlocks, sizeof(totalBlocks));
+    // Write the total number of blocks (use fixed-size type for consistency)
+    uint32_t fixedTotalBlocks = static_cast<uint32_t>(totalBlocks);
+    std::memcpy(superblock.data() + 4, &fixedTotalBlocks, sizeof(fixedTotalBlocks));
 
-    // Write the number of inodes
-    size_t numberOfInodes = totalBlocks / 8; // Example: Allocate 1/8th of total blocks to inodes
+    // Write the number of inodes (use fixed-size type for consistency)
+    uint32_t numberOfInodes = fixedTotalBlocks / 8; // Example: 1/8th of total blocks for inodes
     std::memcpy(superblock.data() + 8, &numberOfInodes, sizeof(numberOfInodes));
 
     // Write the superblock to block 0
     writeBlock(0, superblock);
 
     // Initialize the free block vector (block 1)
-    std::vector<char> freeBlockVector(blockSize, 0);
-    std::fill(freeBlockVector.begin(), freeBlockVector.end(), 0xFF); // Mark all blocks free
-    freeBlockVector[0] &= ~0x3; // Reserve blocks 0 and 1
+    std::vector<char> freeBlockVector(blockSize, 0xFF); // Mark all blocks free initially
+    freeBlockVector[0] &= ~0x3; // Reserve blocks 0 (superblock) and 1 (free block vector)
     writeBlock(1, freeBlockVector);
+
+    // Debug output to verify
+    std::cout << "Superblock written with:\n";
+    std::cout << "  Magic number: LLFS\n";
+    std::cout << "  Total blocks: " << fixedTotalBlocks << "\n";
+    std::cout << "  Number of inodes: " << numberOfInodes << "\n";
 }
+
 
 
 void DiskManager::writeBlock(size_t blockNumber, const std::vector<char>& data) {

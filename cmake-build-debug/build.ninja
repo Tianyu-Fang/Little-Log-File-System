@@ -79,6 +79,18 @@ build CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.o: CXX_COMPILER
   OBJECT_DIR = CMakeFiles/Little_Log_File_System.dir
   OBJECT_FILE_DIR = CMakeFiles/Little_Log_File_System.dir
 
+build CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o: CXX_COMPILER__Little_Log_File_System_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/LLFS.cpp || cmake_object_order_depends_target_Little_Log_File_System
+  DEP_FILE = CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Little_Log_File_System.dir
+  OBJECT_FILE_DIR = CMakeFiles/Little_Log_File_System.dir
+
+build CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o: CXX_COMPILER__Little_Log_File_System_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/CrashRecovery.cpp || cmake_object_order_depends_target_Little_Log_File_System
+  DEP_FILE = CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Little_Log_File_System.dir
+  OBJECT_FILE_DIR = CMakeFiles/Little_Log_File_System.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Little_Log_File_System
@@ -87,52 +99,13 @@ build CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.o: CXX_COMPILER
 #############################################
 # Link the executable Little_Log_File_System
 
-build Little_Log_File_System: CXX_EXECUTABLE_LINKER__Little_Log_File_System_Debug CMakeFiles/Little_Log_File_System.dir/main.cpp.o CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.o CMakeFiles/Little_Log_File_System.dir/FreeBlockManager.cpp.o CMakeFiles/Little_Log_File_System.dir/InodeManager.cpp.o CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.o
+build Little_Log_File_System: CXX_EXECUTABLE_LINKER__Little_Log_File_System_Debug CMakeFiles/Little_Log_File_System.dir/main.cpp.o CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.o CMakeFiles/Little_Log_File_System.dir/FreeBlockManager.cpp.o CMakeFiles/Little_Log_File_System.dir/InodeManager.cpp.o CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.o CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0
   OBJECT_DIR = CMakeFiles/Little_Log_File_System.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = Little_Log_File_System
   TARGET_PDB = Little_Log_File_System.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target InodeManagerTest
-
-
-#############################################
-# Order-only phony target for InodeManagerTest
-
-build cmake_object_order_depends_target_InodeManagerTest: phony || .
-
-build CMakeFiles/InodeManagerTest.dir/Test/InodeManagerTest.cpp.o: CXX_COMPILER__InodeManagerTest_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/Test/InodeManagerTest.cpp || cmake_object_order_depends_target_InodeManagerTest
-  DEFINES = -DTEST_BUILD
-  DEP_FILE = CMakeFiles/InodeManagerTest.dir/Test/InodeManagerTest.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/InodeManagerTest.dir
-  OBJECT_FILE_DIR = CMakeFiles/InodeManagerTest.dir/Test
-
-build CMakeFiles/InodeManagerTest.dir/InodeManager.cpp.o: CXX_COMPILER__InodeManagerTest_unscanned_Debug /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/InodeManager.cpp || cmake_object_order_depends_target_InodeManagerTest
-  DEFINES = -DTEST_BUILD
-  DEP_FILE = CMakeFiles/InodeManagerTest.dir/InodeManager.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/InodeManagerTest.dir
-  OBJECT_FILE_DIR = CMakeFiles/InodeManagerTest.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target InodeManagerTest
-
-
-#############################################
-# Link the executable InodeManagerTest
-
-build InodeManagerTest: CXX_EXECUTABLE_LINKER__InodeManagerTest_Debug CMakeFiles/InodeManagerTest.dir/Test/InodeManagerTest.cpp.o CMakeFiles/InodeManagerTest.dir/InodeManager.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0
-  OBJECT_DIR = CMakeFiles/InodeManagerTest.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = InodeManagerTest
-  TARGET_PDB = InodeManagerTest.dbg
 
 
 #############################################
@@ -168,7 +141,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/cmake-build-debug
 
-build all: phony Little_Log_File_System InodeManagerTest
+build all: phony Little_Log_File_System
 
 # =============================================================================
 # Built-in targets

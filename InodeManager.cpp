@@ -83,3 +83,8 @@ void InodeManager::checkInodeId(size_t inodeId) const {
         throw std::out_of_range("Inode ID out of range.");
     }
 }
+
+// Get the total number of inodes
+size_t InodeManager::getTotalInodes() const {
+    return totalInodes;
+}

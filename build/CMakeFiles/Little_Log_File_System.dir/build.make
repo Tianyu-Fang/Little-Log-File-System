@@ -142,13 +142,43 @@ CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/DirectoryManager.cpp -o CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.s
 
+CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o: CMakeFiles/Little_Log_File_System.dir/flags.make
+CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o: /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/LLFS.cpp
+CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o: CMakeFiles/Little_Log_File_System.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o -MF CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o.d -o CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o -c /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/LLFS.cpp
+
+CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/LLFS.cpp > CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.i
+
+CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/LLFS.cpp -o CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.s
+
+CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o: CMakeFiles/Little_Log_File_System.dir/flags.make
+CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o: /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/CrashRecovery.cpp
+CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o: CMakeFiles/Little_Log_File_System.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o -MF CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o.d -o CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o -c /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/CrashRecovery.cpp
+
+CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/CrashRecovery.cpp > CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.i
+
+CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/CrashRecovery.cpp -o CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.s
+
 # Object files for target Little_Log_File_System
 Little_Log_File_System_OBJECTS = \
 "CMakeFiles/Little_Log_File_System.dir/main.cpp.o" \
 "CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.o" \
 "CMakeFiles/Little_Log_File_System.dir/FreeBlockManager.cpp.o" \
 "CMakeFiles/Little_Log_File_System.dir/InodeManager.cpp.o" \
-"CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.o"
+"CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.o" \
+"CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o" \
+"CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o"
 
 # External object files for target Little_Log_File_System
 Little_Log_File_System_EXTERNAL_OBJECTS =
@@ -158,9 +188,11 @@ Little_Log_File_System: CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.o
 Little_Log_File_System: CMakeFiles/Little_Log_File_System.dir/FreeBlockManager.cpp.o
 Little_Log_File_System: CMakeFiles/Little_Log_File_System.dir/InodeManager.cpp.o
 Little_Log_File_System: CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.o
+Little_Log_File_System: CMakeFiles/Little_Log_File_System.dir/LLFS.cpp.o
+Little_Log_File_System: CMakeFiles/Little_Log_File_System.dir/CrashRecovery.cpp.o
 Little_Log_File_System: CMakeFiles/Little_Log_File_System.dir/build.make
 Little_Log_File_System: CMakeFiles/Little_Log_File_System.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Little_Log_File_System"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Little_Log_File_System"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Little_Log_File_System.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

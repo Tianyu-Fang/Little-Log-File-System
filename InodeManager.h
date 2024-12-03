@@ -36,6 +36,9 @@ public:
     // Load inode table from raw data (for restoring from disk)
     void loadInodeTable(const std::vector<uint8_t>& data);
 
+    // Get the total number of inodes
+    size_t getTotalInodes() const;
+
 private:
     size_t totalInodes;            // Total number of inodes
     std::vector<bool> inodeBitmap; // Bitmap for inode allocation
