@@ -64,12 +64,12 @@ CMAKE_BINARY_DIR = /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-S
 
 # The main recursive "all" target.
 all: CMakeFiles/Little_Log_File_System.dir/all
-all: CMakeFiles/DiskTest.dir/all
+all: CMakeFiles/DirectoryManagerTest.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/Little_Log_File_System.dir/codegen
-codegen: CMakeFiles/DiskTest.dir/codegen
+codegen: CMakeFiles/DirectoryManagerTest.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -78,7 +78,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Little_Log_File_System.dir/clean
-clean: CMakeFiles/DiskTest.dir/clean
+clean: CMakeFiles/DirectoryManagerTest.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -88,12 +88,12 @@ clean: CMakeFiles/DiskTest.dir/clean
 CMakeFiles/Little_Log_File_System.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles --progress-num=4,5,6 "Built target Little_Log_File_System"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles --progress-num=4,5,6,7,8,9 "Built target Little_Log_File_System"
 .PHONY : CMakeFiles/Little_Log_File_System.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Little_Log_File_System.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Little_Log_File_System.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles 0
 .PHONY : CMakeFiles/Little_Log_File_System.dir/rule
@@ -113,35 +113,35 @@ CMakeFiles/Little_Log_File_System.dir/clean:
 .PHONY : CMakeFiles/Little_Log_File_System.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/DiskTest.dir
+# Target rules for target CMakeFiles/DirectoryManagerTest.dir
 
 # All Build rule for target.
-CMakeFiles/DiskTest.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles --progress-num=1,2,3 "Built target DiskTest"
-.PHONY : CMakeFiles/DiskTest.dir/all
+CMakeFiles/DirectoryManagerTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles --progress-num=1,2,3 "Built target DirectoryManagerTest"
+.PHONY : CMakeFiles/DirectoryManagerTest.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/DiskTest.dir/rule: cmake_check_build_system
+CMakeFiles/DirectoryManagerTest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DiskTest.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DirectoryManagerTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/build/CMakeFiles 0
-.PHONY : CMakeFiles/DiskTest.dir/rule
+.PHONY : CMakeFiles/DirectoryManagerTest.dir/rule
 
 # Convenience name for target.
-DiskTest: CMakeFiles/DiskTest.dir/rule
-.PHONY : DiskTest
+DirectoryManagerTest: CMakeFiles/DirectoryManagerTest.dir/rule
+.PHONY : DirectoryManagerTest
 
 # codegen rule for target.
-CMakeFiles/DiskTest.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/codegen
-.PHONY : CMakeFiles/DiskTest.dir/codegen
+CMakeFiles/DirectoryManagerTest.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/codegen
+.PHONY : CMakeFiles/DirectoryManagerTest.dir/codegen
 
 # clean rule for target.
-CMakeFiles/DiskTest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/clean
-.PHONY : CMakeFiles/DiskTest.dir/clean
+CMakeFiles/DirectoryManagerTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/clean
+.PHONY : CMakeFiles/DirectoryManagerTest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

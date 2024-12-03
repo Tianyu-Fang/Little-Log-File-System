@@ -9,15 +9,67 @@ add_executable(Little_Log_File_System
         main.cpp
         DiskManager.cpp
         DiskManager.h
+        FreeBlockManager.cpp
+        FreeBlockManager.h
+        InodeManager.cpp
+        InodeManager.h
+        DirectoryManager.cpp
+        DirectoryManager.h
 )
 
-# Test Target
-add_executable(DiskTest
-        Test/DiskTest.cpp
-        DiskManager.cpp
-        DiskManager.h
+## Test Target
+#add_executable(DiskTest
+#        Test/DiskTest.cpp
+#        DiskManager.cpp
+#        DiskManager.h
+#        Test/FreeBlockManagerTest.cpp
+#)
+#
+## Define TEST_BUILD for the DiskTest target
+#target_compile_definitions(DiskTest PRIVATE TEST_BUILD)
+
+#cmake -S . -B build
+#cmake --build build --target Little_Log_File_System
+#cmake --build build --target DiskTest
+#./build/DiskTest
+
+
+
+## Test target
+#add_executable(FreeBlockManagerTest
+#        Test/FreeBlockManagerTest.cpp
+#        FreeBlockManager.cpp
+#        FreeBlockManager.h
+#)
+#
+## Define TEST_BUILD for the test target
+#target_compile_definitions(FreeBlockManagerTest PRIVATE TEST_BUILD)
+
+#cmake -S . -B build
+#cmake --build build --target Little_Log_File_System
+#cmake --build build --target FreeBlockManagerTest
+#./build/FreeBlockManagerTest
+
+
+#add_executable(InodeManagerTest
+#        Test/InodeManagerTest.cpp
+#        InodeManager.cpp
+#        InodeManager.h
+#)
+#
+#target_compile_definitions(InodeManagerTest PRIVATE TEST_BUILD)
+#cmake -S . -B build
+#cmake --build build --target Little_Log_File_System
+#cmake --build build --target InodeManagerTest
+#./build/InodeManagerTest
+
+add_executable(DirectoryManagerTest
+        Test/DirectoryManagerTest.cpp
+        DirectoryManager.cpp
 )
 
-# Define TEST_BUILD for the DiskTest target
-target_compile_definitions(DiskTest PRIVATE TEST_BUILD)
-
+target_compile_definitions(DirectoryManagerTest PRIVATE TEST_BUILD)
+#cmake -S . -B build
+#cmake --build build --target Little_Log_File_System
+#cmake --build build --target DirectoryManagerTest
+#./build/DirectoryManagerTest

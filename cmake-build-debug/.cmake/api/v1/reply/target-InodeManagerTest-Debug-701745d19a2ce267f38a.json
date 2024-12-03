@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "DiskTest"
+			"path" : "InodeManagerTest"
 		}
 	],
 	"backtrace" : 1,
@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 15,
+				"line" : 54,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 22,
+				"line" : 60,
 				"parent" : 0
 			}
 		]
@@ -68,7 +68,7 @@
 			]
 		}
 	],
-	"id" : "DiskTest::@6890427a1f51a3e7e1df",
+	"id" : "InodeManagerTest::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -84,8 +84,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "DiskTest",
-	"nameOnDisk" : "DiskTest",
+	"name" : "InodeManagerTest",
+	"nameOnDisk" : "InodeManagerTest",
 	"paths" : 
 	{
 		"build" : ".",
@@ -114,18 +114,18 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Test/DiskTest.cpp",
+			"path" : "Test/InodeManagerTest.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "DiskManager.cpp",
+			"path" : "InodeManager.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "DiskManager.h",
+			"path" : "InodeManager.h",
 			"sourceGroupIndex" : 1
 		}
 	],

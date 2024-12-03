@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-S
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/opt/homebrew/Cellar/cmake/3.26.1/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -130,17 +130,44 @@ Little_Log_File_System/fast:
 .PHONY : Little_Log_File_System/fast
 
 #=============================================================================
-# Target rules for targets named DiskTest
+# Target rules for targets named DirectoryManagerTest
 
 # Build rule for target.
-DiskTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DiskTest
-.PHONY : DiskTest
+DirectoryManagerTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DirectoryManagerTest
+.PHONY : DirectoryManagerTest
 
 # fast build rule for target.
-DiskTest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/build
-.PHONY : DiskTest/fast
+DirectoryManagerTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/build
+.PHONY : DirectoryManagerTest/fast
+
+DirectoryManager.o: DirectoryManager.cpp.o
+.PHONY : DirectoryManager.o
+
+# target to build an object file
+DirectoryManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/DirectoryManager.cpp.o
+.PHONY : DirectoryManager.cpp.o
+
+DirectoryManager.i: DirectoryManager.cpp.i
+.PHONY : DirectoryManager.i
+
+# target to preprocess a source file
+DirectoryManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/DirectoryManager.cpp.i
+.PHONY : DirectoryManager.cpp.i
+
+DirectoryManager.s: DirectoryManager.cpp.s
+.PHONY : DirectoryManager.s
+
+# target to generate assembly for a file
+DirectoryManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/DirectoryManager.cpp.s
+.PHONY : DirectoryManager.cpp.s
 
 DiskManager.o: DiskManager.cpp.o
 .PHONY : DiskManager.o
@@ -148,7 +175,6 @@ DiskManager.o: DiskManager.cpp.o
 # target to build an object file
 DiskManager.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/DiskManager.cpp.o
 .PHONY : DiskManager.cpp.o
 
 DiskManager.i: DiskManager.cpp.i
@@ -157,7 +183,6 @@ DiskManager.i: DiskManager.cpp.i
 # target to preprocess a source file
 DiskManager.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/DiskManager.cpp.i
 .PHONY : DiskManager.cpp.i
 
 DiskManager.s: DiskManager.cpp.s
@@ -166,32 +191,79 @@ DiskManager.s: DiskManager.cpp.s
 # target to generate assembly for a file
 DiskManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/DiskManager.cpp.s
 .PHONY : DiskManager.cpp.s
 
-Test/DiskTest.o: Test/DiskTest.cpp.o
-.PHONY : Test/DiskTest.o
+FreeBlockManager.o: FreeBlockManager.cpp.o
+.PHONY : FreeBlockManager.o
 
 # target to build an object file
-Test/DiskTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/Test/DiskTest.cpp.o
-.PHONY : Test/DiskTest.cpp.o
+FreeBlockManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/FreeBlockManager.cpp.o
+.PHONY : FreeBlockManager.cpp.o
 
-Test/DiskTest.i: Test/DiskTest.cpp.i
-.PHONY : Test/DiskTest.i
+FreeBlockManager.i: FreeBlockManager.cpp.i
+.PHONY : FreeBlockManager.i
 
 # target to preprocess a source file
-Test/DiskTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/Test/DiskTest.cpp.i
-.PHONY : Test/DiskTest.cpp.i
+FreeBlockManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/FreeBlockManager.cpp.i
+.PHONY : FreeBlockManager.cpp.i
 
-Test/DiskTest.s: Test/DiskTest.cpp.s
-.PHONY : Test/DiskTest.s
+FreeBlockManager.s: FreeBlockManager.cpp.s
+.PHONY : FreeBlockManager.s
 
 # target to generate assembly for a file
-Test/DiskTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskTest.dir/build.make CMakeFiles/DiskTest.dir/Test/DiskTest.cpp.s
-.PHONY : Test/DiskTest.cpp.s
+FreeBlockManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/FreeBlockManager.cpp.s
+.PHONY : FreeBlockManager.cpp.s
+
+InodeManager.o: InodeManager.cpp.o
+.PHONY : InodeManager.o
+
+# target to build an object file
+InodeManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/InodeManager.cpp.o
+.PHONY : InodeManager.cpp.o
+
+InodeManager.i: InodeManager.cpp.i
+.PHONY : InodeManager.i
+
+# target to preprocess a source file
+InodeManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/InodeManager.cpp.i
+.PHONY : InodeManager.cpp.i
+
+InodeManager.s: InodeManager.cpp.s
+.PHONY : InodeManager.s
+
+# target to generate assembly for a file
+InodeManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Little_Log_File_System.dir/build.make CMakeFiles/Little_Log_File_System.dir/InodeManager.cpp.s
+.PHONY : InodeManager.cpp.s
+
+Test/DirectoryManagerTest.o: Test/DirectoryManagerTest.cpp.o
+.PHONY : Test/DirectoryManagerTest.o
+
+# target to build an object file
+Test/DirectoryManagerTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/Test/DirectoryManagerTest.cpp.o
+.PHONY : Test/DirectoryManagerTest.cpp.o
+
+Test/DirectoryManagerTest.i: Test/DirectoryManagerTest.cpp.i
+.PHONY : Test/DirectoryManagerTest.i
+
+# target to preprocess a source file
+Test/DirectoryManagerTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/Test/DirectoryManagerTest.cpp.i
+.PHONY : Test/DirectoryManagerTest.cpp.i
+
+Test/DirectoryManagerTest.s: Test/DirectoryManagerTest.cpp.s
+.PHONY : Test/DirectoryManagerTest.s
+
+# target to generate assembly for a file
+Test/DirectoryManagerTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectoryManagerTest.dir/build.make CMakeFiles/DirectoryManagerTest.dir/Test/DirectoryManagerTest.cpp.s
+.PHONY : Test/DirectoryManagerTest.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -225,14 +297,23 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... DiskTest"
+	@echo "... DirectoryManagerTest"
 	@echo "... Little_Log_File_System"
+	@echo "... DirectoryManager.o"
+	@echo "... DirectoryManager.i"
+	@echo "... DirectoryManager.s"
 	@echo "... DiskManager.o"
 	@echo "... DiskManager.i"
 	@echo "... DiskManager.s"
-	@echo "... Test/DiskTest.o"
-	@echo "... Test/DiskTest.i"
-	@echo "... Test/DiskTest.s"
+	@echo "... FreeBlockManager.o"
+	@echo "... FreeBlockManager.i"
+	@echo "... FreeBlockManager.s"
+	@echo "... InodeManager.o"
+	@echo "... InodeManager.i"
+	@echo "... InodeManager.s"
+	@echo "... Test/DirectoryManagerTest.o"
+	@echo "... Test/DirectoryManagerTest.i"
+	@echo "... Test/DirectoryManagerTest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

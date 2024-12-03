@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/DiskManager.cpp" "CMakeFiles/DiskTest.dir/DiskManager.cpp.o" "gcc" "CMakeFiles/DiskTest.dir/DiskManager.cpp.o.d"
-  "/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/Test/DiskTest.cpp" "CMakeFiles/DiskTest.dir/Test/DiskTest.cpp.o" "gcc" "CMakeFiles/DiskTest.dir/Test/DiskTest.cpp.o.d"
+  "/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/DirectoryManager.cpp" "CMakeFiles/DirectoryManagerTest.dir/DirectoryManager.cpp.o" "gcc" "CMakeFiles/DirectoryManagerTest.dir/DirectoryManager.cpp.o.d"
+  "/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/Test/DirectoryManagerTest.cpp" "CMakeFiles/DirectoryManagerTest.dir/Test/DirectoryManagerTest.cpp.o" "gcc" "CMakeFiles/DirectoryManagerTest.dir/Test/DirectoryManagerTest.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

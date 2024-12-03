@@ -40,15 +40,15 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "DiskTest::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-DiskTest-Debug-6a14e3943283990a4f6b.json",
-					"name" : "DiskTest",
+					"id" : "InodeManagerTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-InodeManagerTest-Debug-701745d19a2ce267f38a.json",
+					"name" : "InodeManagerTest",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Little_Log_File_System::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Little_Log_File_System-Debug-54add66915f97be35908.json",
+					"jsonFile" : "target-Little_Log_File_System-Debug-179993d9ac36d012cd56.json",
 					"name" : "Little_Log_File_System",
 					"projectIndex" : 0
 				}

@@ -57,5 +57,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Little_Log_File_System.dir/DependInfo.cmake"
-  "CMakeFiles/DiskTest.dir/DependInfo.cmake"
+  "CMakeFiles/DirectoryManagerTest.dir/DependInfo.cmake"
   )

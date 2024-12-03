@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.o"
+  "CMakeFiles/Little_Log_File_System.dir/DirectoryManager.cpp.o.d"
   "CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.o"
   "CMakeFiles/Little_Log_File_System.dir/DiskManager.cpp.o.d"
+  "CMakeFiles/Little_Log_File_System.dir/FreeBlockManager.cpp.o"
+  "CMakeFiles/Little_Log_File_System.dir/FreeBlockManager.cpp.o.d"
+  "CMakeFiles/Little_Log_File_System.dir/InodeManager.cpp.o"
+  "CMakeFiles/Little_Log_File_System.dir/InodeManager.cpp.o.d"
   "CMakeFiles/Little_Log_File_System.dir/main.cpp.o"
   "CMakeFiles/Little_Log_File_System.dir/main.cpp.o.d"
   "Little_Log_File_System"

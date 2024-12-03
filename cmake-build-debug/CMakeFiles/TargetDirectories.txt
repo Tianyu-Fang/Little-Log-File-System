@@ -1,4 +1,4 @@
 /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/cmake-build-debug/CMakeFiles/Little_Log_File_System.dir
-/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/cmake-build-debug/CMakeFiles/DiskTest.dir
+/Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/cmake-build-debug/CMakeFiles/InodeManagerTest.dir
 /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/tianyu/Documents/NEU/2024Fall/CS5600/Little-Log-File-System/cmake-build-debug/CMakeFiles/rebuild_cache.dir
