@@ -60,21 +60,43 @@ The LLFS system is modular, with the following key components:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/LLFS.git
-   cd LLFS
+   git clone https://github.com/Tianyu-Fang/Little-Log-File-System.git
+   cd Little-Log-File-System
    ```
 2. Build the project:
    ```bash
-   mkdir build && cd build
-   cmake ..
-   cmake --build .
+   cmake -S . -B build
+   cmake --build build --target Little_Log_File_System
    ```
 3. Run the main program:
    ```bash
    ./build/Little_Log_File_System
    ```
 4. Run benchmarks:
+   Update CMakeList
    ```bash
+    # LLFS Benchmark Program
+    add_executable(LLFS_Benchmark
+        DiskManager.cpp
+        DiskManager.h
+        FreeBlockManager.cpp
+        FreeBlockManager.h
+        InodeManager.cpp
+        InodeManager.h
+        DirectoryManager.cpp
+        DirectoryManager.h
+        LLFS.cpp
+        LLFS.h
+        CrashRecovery.cpp
+        CrashRecovery.h
+        Test/LLFS_Benchmark.cpp
+    )
+
+    # Define BENCHMARK_TEST for the LLFS_Benchmark target
+    target_compile_definitions(LLFS_Benchmark PRIVATE BENCHMARK_TEST)
+   ```
+   ```bash
+   cmake --build build --target LLFS_Benchmark
    ./build/LLFS_Benchmark
    ```
 
